@@ -20,7 +20,7 @@ public class Booking {
                 //distance between pickup and drop = (drop - pickup) * 15KM
                 distanceBetweenPickUpAndDrop = Math.abs((dropPoint - '0') - (pickupPoint - '0')) * 15;
 
-                //trip earning = 100 + (distanceBetweenpickUpandDrop-5) * 10
+                //trip earning = 100 + (distanceBetweenPickupAndDrop-5) * 10
                 earnings = (distanceBetweenPickUpAndDrop - 5) * 10 + 100;
 
                 //drop time calculation

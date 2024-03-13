@@ -7,8 +7,8 @@ import java.util.Scanner;
 import static Projects.taxibookingsystem.Booking.*;
 
 public class App {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args){
+
         List<Taxi> taxis = createTaxis(4);
 
         Scanner s = new Scanner(System.in);
@@ -38,7 +38,7 @@ public class App {
                     }
                     List<Taxi> freeTaxis = getAvailableTaxi(taxis,pickupTime,pickupPoint);
 
-                    if(freeTaxis.size() == 0)
+                    if(freeTaxis.isEmpty())
                     {
                         System.out.println("No Taxi can be alloted. Exitting");
                         return;
